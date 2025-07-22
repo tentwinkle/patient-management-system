@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Patient Management System",
   description: "A comprehensive patient management system with role-based access control",
-  generator: 'Lukas - Full Stack Dev'
+  generator: 'Lukas - Full Stack Dev',
+  icons: "/fav-icon.png",
 }
 
 export default function RootLayout({
