@@ -148,7 +148,7 @@ After running the seed script, you can use these demo accounts:
 ## 🏗 Architecture
 
 ### Backend Architecture
-\`\`\`
+```
 ├── server/
 │   ├── routers/          # tRPC routers
 │   └── trpc.ts          # tRPC configuration
@@ -158,10 +158,10 @@ After running the seed script, you can use these demo accounts:
 ├── prisma/
 │   ├── schema.prisma    # Database schema
 │   └── seed.ts          # Database seeding
-\`\`\`
+```
 
 ### Frontend Architecture
-\`\`\`
+```
 ├── pages/               # Next.js pages
 ├── components/          # React components
 │   ├── layout/         # Layout components
@@ -169,7 +169,7 @@ After running the seed script, you can use these demo accounts:
 │   └── ui/             # shadcn/ui components
 └── lib/
     └── trpc.ts         # tRPC client configuration
-\`\`\`
+```
 
 ## 🌱 Database Seeding
 
