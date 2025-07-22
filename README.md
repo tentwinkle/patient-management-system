@@ -31,32 +31,32 @@ A comprehensive Patient Management System built with Next.js, tRPC, Prisma, and 
 
 ### 1. Clone the Repository
 
-\`\`\`bash
+```
 git clone <repository-url>
 cd patient-management-system
-\`\`\`
+```
 
 ### 2. Install Dependencies
 
-\`\`\`bash
+```
 pnpm install
-\`\`\`
+```
 
 ### 3. Environment Setup
 
 Copy the example environment file and update the values:
 
-\`\`\`bash
+```
 cp .env.example .env.local
-\`\`\`
+```
 
 Update the following environment variables:
 
-\`\`\`env
+```env
 DATABASE_URL="postgresql://username:password@localhost:5432/patient_management"
 NEXTAUTH_URL="http://localhost:3000"
 NEXTAUTH_SECRET="your-secret-key-here"
-\`\`\`
+```
 
 ### 4. Database Setup
 
@@ -72,9 +72,9 @@ NEXTAUTH_SECRET="your-secret-key-here"
 
 ### 5. Run the Development Server
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
