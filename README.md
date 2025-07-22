@@ -39,9 +39,7 @@ cd patient-management-system
 ### 2. Install Dependencies
 
 \`\`\`bash
-npm install
-# or
-yarn install
+pnpm install
 \`\`\`
 
 ### 3. Environment Setup
@@ -62,23 +60,20 @@ NEXTAUTH_SECRET="your-secret-key-here"
 
 ### 4. Database Setup
 
-\`\`\`bash
-# Generate Prisma client
-npx prisma generate
+#### Generate Prisma client
+```npx prisma generate``` or ```npm run db:generate```
 
-# Push database schema
-npx prisma db push
+#### Push database schema
+```npx prisma db push``` or ```npm run db:push```
 
-# Seed the database with demo users and patients
-npm run db:seed
-\`\`\`
+#### Seed the database with demo users and patients
+```npm run db:seed```
+
 
 ### 5. Run the Development Server
 
 \`\`\`bash
 npm run dev
-# or
-yarn dev
 \`\`\`
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -180,25 +175,17 @@ After running the seed script, you can use these demo accounts:
 
 The seed script creates:
 - 2 demo users (admin and regular user)
-- 8 sample patients with realistic data
+- 7 sample patients with realistic data
 
 Run seeding with:
-\`\`\`bash
-npm run db:seed
-\`\`\`
+
+```npm run db:seed```
 
 ## 🧪 Testing
 
-\`\`\`bash
-# Run unit tests
-npm run test
+#### Run unit tests
 
-# Run integration tests
-npm run test:integration
-
-# Run all tests with coverage
-npm run test:coverage
-\`\`\`
+```npm run test```
 
 ## 📦 Deployment
 
@@ -212,33 +199,13 @@ npm run test:coverage
 
 ### Manual Deployment
 
-\`\`\`bash
-# Build the application
-npm run build
+#### Build the application
+```npm run build```
 
-# Start production server
-npm start
-\`\`\`
+#### Start production server
+```npm start```
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
-
-If you encounter any issues or have questions, please:
-
-1. Check the existing issues on GitHub
-2. Create a new issue with detailed information
-3. Contact the development team
 
 ## 🔄 Future Enhancements
 
