@@ -267,7 +267,7 @@ export default function SignIn() {
           transition={{ delay: 0.8 }}
           className="text-center mt-8 text-sm text-gray-500"
         >
-          <p>© 2024 HealthCare System. Secure Patient Management Platform.</p>
+          <p>© 2025 HealthCare System. Secure Patient Management Platform.</p>
         </motion.div>
       </motion.div>
     </div>

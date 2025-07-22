@@ -446,7 +446,7 @@ export function PatientTable() {
                             <Button
                               variant="outline"
                               size="sm"
-                              onClick={() => setEditingPatient({ ...patient, dob: new Date(patient.dob), createdAt: new Date(patient.createdAt), updatedAt: new Date(patient.updatedAt) })}
+                              onClick={() => setDeletingPatient({ ...patient, dob: new Date(patient.dob), createdAt: new Date(patient.createdAt), updatedAt: new Date(patient.updatedAt) })}
                               className="flex-1 hover:bg-red-50 hover:border-red-300 transition-all duration-200"
                             >
                               <Trash2 className="h-4 w-4 mr-2 text-red-600" />
