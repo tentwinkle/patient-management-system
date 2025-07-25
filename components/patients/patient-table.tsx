@@ -43,6 +43,9 @@ import {
   ChevronsLeft,
   ChevronsRight,
   Users,
+  ArrowUp,
+  ArrowDown,
+  ArrowUpDown,
   Filter,
   RefreshCw,
 } from "lucide-react"
@@ -283,8 +286,23 @@ export function PatientTable() {
               {table.getHeaderGroups().map((headerGroup) => (
                 <TableRow key={headerGroup.id} className="bg-gray-50 border-b border-gray-200">
                   {headerGroup.headers.map((header) => (
-                    <TableHead key={header.id} className="font-semibold text-gray-700 py-4">
+                    <TableHead
+                      key={header.id}
+                      className="font-semibold text-gray-700 py-4 cursor-pointer select-none"
+                      onClick={header.column.getToggleSortingHandler()}
+                    >
                       {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
+                      {header.column.getCanSort() && (
+                        <span className="ml-2 inline-block">
+                          {header.column.getIsSorted() === "asc" ? (
+                            <ArrowUp className="w-4 h-4" />
+                          ) : header.column.getIsSorted() === "desc" ? (
+                            <ArrowDown className="w-4 h-4" />
+                          ) : (
+                            <ArrowUpDown className="w-4 h-4 opacity-50" />
+                          )}
+                        </span>
+                      )}
                     </TableHead>
                   ))}
                 </TableRow>
